@@ -1,0 +1,65 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure the layout takes the full viewport height */
+}
+
+.app-content {
+  display: flex;
+  flex-grow: 1; /* Allow content to grow to fill available space */
+}
+
+.main-content {
+  flex-grow: 10; /* Take 70% of available space */
+  background-color: #f0f0f0; /* Adjust as needed */
+  padding-left: 27%; /* Add padding as needed */
+}
+
+/* Adjust the width of the RightSidebar to take 30% of available space */
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.header {
+  background-color: rgb(210, 226, 240);
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  padding-right: 3%;
+}
+.profile{
+  margin-right: 3vw;
+  text-decoration: none;
+  color: black;
+}
+.logOutButton {
+  display: inline-block;
+  padding: 6px 15px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logOutButton:hover {
+  background-color: #e53935;
+}
+
+.logOutButton:focus {
+  outline: none;
+}
+
+.logOutButton:active {
+  background-color: #b25757;
+}

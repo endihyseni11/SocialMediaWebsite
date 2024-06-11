@@ -1,0 +1,55 @@
+.left-sidebar {
+    position: fixed;
+    top: 3%;
+    left: 0;
+    height: 100%;
+    width: 200px; /* Adjust the width as needed */
+    background-color: white; /* Sidebar background color */
+    color: #fff; /* Text color */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+    color: black;
+  }
+  
+  .profile-info {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 1%;
+  }
+  
+  .profile-info h2 {
+    font-size: 18px;
+    margin: 0;
+    color: black;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .sidebar-links a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar-links a:hover {
+    text-decoration: underline;
+
+  }
+  
+
+  .profile-picture {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circular image */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    margin-right: 10px; /* Add spacing between the image and username */
+  }

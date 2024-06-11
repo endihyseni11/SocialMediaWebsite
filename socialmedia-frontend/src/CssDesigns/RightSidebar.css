@@ -1,0 +1,200 @@
+/* RightSidebar.css */
+.right-sidebar-container {
+  width: 20%;
+  background-color: #f7f7f7; /* Add your desired background color */
+  position: fixed;
+  right: 0%;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: right 0.3s ease-in-out;
+}
+
+.right-sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex: 1; /* Add this to expand and fill available space */
+}
+
+.connected-friends {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  border-right: 1px solid #ccc;
+}
+
+.chat-box-container {
+  flex: 1; /* Add this to expand and fill available space */
+  overflow-y: auto; /* Add this to enable scrolling */
+  padding: 16px;
+  background-color: #ffffff;
+}
+
+.connected-friends-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+
+
+  align-items: center;
+}
+.liFriends{
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+/* Add any other styling you want for the friend list and chat box */
+/* Your existing styles for .liFriends and .chat-box */
+
+.toggle-button {
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: left 0.3s;
+  z-index: 1000;
+  margin-top: 10%;
+}
+
+.right-sidebar.open .toggle-button {
+  left: 231px;
+}
+
+.right-sidebar.closed .toggle-button {
+  left: -40px;
+}
+
+/* Additional styling for chat header and messages if needed */
+.chat-header {
+  display: flex;
+  align-items: center;
+  margin-top: -7%;
+  height: 5vh;
+  width: 106%;
+  margin-left: -6%;
+  background-color: #4a8f6a;
+  color: white;
+  padding-left: 5%;
+}
+.close-chat-button{
+  margin-left: 42%;
+}
+.chat-messages {
+  overflow-y: auto;
+  height: 32vh;
+  width: 17.5vw;
+  margin-left: -7%;
+  margin-top: 2%; /* Remove the padding here or adjust it as needed */
+}
+
+.chat-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: #fff; /* Set your desired background color */
+  padding: 10px;
+}
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Grow to take up available space */
+}
+
+.chat-input input {
+  flex-grow: 1; /* Grow to take up available space */
+  margin-right: 10px; /* Add some spacing between input and button */
+}
+
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* Add styles for sent messages */
+.chat-message.sent {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+  margin-left: auto;
+}
+
+.chat-message.sent  .message-content {
+  background-color: #7e9aff; /* Set a background color for sent messages */
+  padding: 5px;
+}
+
+/* Add styles for received messages */
+.chat-message.received {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+  margin-right: auto;
+}
+
+.chat-message.received  .message-content {
+  background-color: #a3a0a0; /* Set a background color for received messages */
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px 20px 20px 20px;
+  
+}
+
+.message-content{
+  
+  border-radius: 20px 20px 20px 20px;
+  max-width: 180px;
+  word-wrap: break-word; /* Allow long words to break onto the next line */
+  white-space: pre-wrap; /* Preserve whitespace and wrap text */
+}
+
+
+.message-options {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the three dots icon */
+.message-options .fa-ellipsis-h {
+  cursor: pointer;
+}
+
+/* Style for the options box (hidden by default) */
+.message-options-box {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+}
+
+/* Style for the delete button inside the options box */
+.message-options-box .delete-message-button {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  color: #333;
+  text-decoration: none;
+}
+
+/* When the three dots container is clicked, display the options box */
+.message-options.active .message-options-box {
+  display: block;
+}

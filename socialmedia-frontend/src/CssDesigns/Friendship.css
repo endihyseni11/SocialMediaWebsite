@@ -1,0 +1,129 @@
+/* Friendship.module.css */
+
+.friendship-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 15vh;
+  margin-left: -9vw;
+  width: 93%;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.friendship-new-div {
+  flex: 1;
+  display: inline;
+  justify-content: left;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
+}
+
+.friendship-heading {
+  margin-left: 3%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.friendship-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-left: 3%;
+}
+
+.friendship-add-button, .friendship-cancel-button, .friendship-accept-button, .friendship-reject-button, .friendship-delete-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.friendship-add-button{
+  margin-left: 10%;
+}
+.friendship-add-button, .friendship-cancel-button{
+  width: 7vw;
+  margin-left: 10%;
+}
+.friendship-results {
+  list-style: none;
+  margin-left: 4%;
+  padding: 0;
+  font-display: flex;
+  flex-direction: row;
+ 
+  width: 25%;
+}
+.friendship-results {
+  list-style: none;
+  margin-left: 4%;
+  padding: 0;
+}
+.friendship-results li {
+  margin-bottom: 10px;
+}
+
+.friendship-friend-requests, .friendship-friends-list{
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+/* Additional styles can be added and customized as needed */
+.requestsLi, .requestsUl{
+  list-style: none;
+}
+
+.friendship-accept-button, .friendship-reject-button{
+  margin-left: 1%;
+}
+
+.friendship-delete-button {
+  margin-left: 2%;
+}
+.friendship-accept-button,
+.friendship-reject-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.requestsLi2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* Aligns items at the start and end */
+  align-items: center; /* Vertically centers the items */
+  width: 25vw;
+}
+
+.requestsLi{
+  display: flex;
+  width: 70%;
+}
+.shoket{
+  align-items: center;
+}
+
+.user-name{
+  margin-left: 0.8vw;
+}
+
+.profile-picture-friendship{
+  width: 2.5vw; /* Adjust the width as needed */
+  height: 5vh; /* Adjust the height as needed */
+  border-radius: 50%; /* Make it a circular image */
+  object-fit: cover; /* Ensure the image covers the entire container */
+  margin-right: 10px; /* Add spacing between the image and username */
+}
+
